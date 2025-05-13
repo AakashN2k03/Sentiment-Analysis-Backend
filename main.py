@@ -9,10 +9,7 @@ app = FastAPI()
 # CORS for frontend (React)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-    "https://sentiment-analysis-frontend-khaki.vercel.app",  # Vercel deployed
-]
-
+   allow_origins=["https://sentiment-analysis-frontend-khaki.vercel.app"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
